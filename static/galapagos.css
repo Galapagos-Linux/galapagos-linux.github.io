@@ -81,10 +81,11 @@ body > footer {
     -webkit-box-shadow: 0 0px 10px 0 #777;
     box-shadow: 0 0px 10px 0 #777;
     height: 3em;
+    font-size: 11pt;
     line-height: 2em;
     margin: 0;
     padding: 0.5em 0;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
