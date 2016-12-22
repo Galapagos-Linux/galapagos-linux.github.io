@@ -21,10 +21,27 @@
         margin-bottom: 1em;
     }
 
-    /* Anchor footer to bottom, decrease font size */
+    /* Anchor footer to bottom, decrease font size
+     * NB: padding-bottom and height will need to be adjusted in the future
+     *     if more content is added to the footer! */
+    html {
+        position: relative;
+    }
+
+    body, html {
+        min-height: 100%;
+        margin: 0;
+    }
+
+    body > #content {
+        padding-bottom: 5em;
+        margin-bottom: 0;
+    }
+
     body > footer {
-        position: static;
-        height: auto;
+        position: absolute;
+        bottom: 0;
+        height: 5em;
         font-size: 10pt;
     }
 
