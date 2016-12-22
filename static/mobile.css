@@ -1,0 +1,39 @@
+@media only screen and (max-device-width: 750px) {
+    /* Make header links visible */
+    body > header > .row {
+        height: auto;
+    }
+
+    body > header > .row > .hide-on-print {
+        background-color: #AD6A91;
+        border-radius: 4px;
+    }
+
+    /* Add margin between main content hero boxes since they will be on top
+     * of one another */
+    .hero > .col#first {
+        margin-bottom: 2em;
+    }
+
+    /* Add margin between download / doc buttons since they will be on top
+     * of one another */
+    .hero > .col#second a.primary {
+        margin-bottom: 1em;
+    }
+
+    /* Anchor footer to bottom, decrease font size */
+    body > footer {
+        position: static;
+        height: auto;
+        font-size: 10pt;
+    }
+
+    body > footer > .row {
+        flex-wrap: wrap;
+    }
+
+    /* Since footer will not be one line, restore left-aligned text */
+    body > footer > .row > .col-6#right {
+        text-align: left;
+    }
+}
