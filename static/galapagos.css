@@ -52,6 +52,21 @@ section#content {
     padding: 1em;
 }
 
+/* Add margin between main content hero boxes since they will be on top
+ * of one another in some situations */
+.hero > .col {
+    margin-bottom: 2em;
+}
+
+/* Add margin between download / doc buttons since they will be on top
+ * of one another in some situations */
+.hero > .col#second a.button {
+    margin-bottom: 1em;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 14px 2em;
+}
+
 .hero > .col > .inner {
     background: #ddd;
     border-radius: 1em;
@@ -81,13 +96,28 @@ body > footer {
     -webkit-box-shadow: 0 0px 10px 0 #777;
     box-shadow: 0 0px 10px 0 #777;
     height: 3em;
-    font-size: 11pt;
     line-height: 2em;
     margin: 0;
-    padding: 0.5em 0;
+    padding: 0.5em 0.5em;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
 }
 
+body > footer > .row {
+    flex-wrap: nowrap;
+}
+
+body > footer > .row > .col-6#left {
+    width: auto;
+    max-width: none;
+    flex-basis: auto;
+}
+
+body > footer > .row > .col-6#right {
+    width: auto;
+    max-width: none;
+    flex-basis: auto;
+    text-align: right;
+}
